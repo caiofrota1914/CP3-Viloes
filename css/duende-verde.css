@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     background-color: #101510;
@@ -48,11 +49,161 @@ body {
 }
 
 .duende-imagem {
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #080b08;
+    color: #ffffff;
+}
+
+.menu-duende {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 68px;
+    padding: 0 7%;
+    background: rgba(5, 8, 5, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(88, 214, 92, 0.16);
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.menu-duende a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.25s;
+}
+
+.menu-duende a:hover {
+    color: #58d65c;
+}
+
+.voltar {
+    position: absolute;
+    top: 92px;
+    left: 7%;
+    z-index: 10;
+
+    color: #58d65c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.hero-duende {
+    min-height: 100vh;
+    padding: 150px 8% 70px;
+
+    background:
+        radial-gradient(circle at 75% 45%, rgba(58, 143, 60, 0.30), transparent 28%),
+        radial-gradient(circle at 20% 40%, rgba(47, 87, 47, 0.18), transparent 35%),
+        linear-gradient(135deg, #070907 0%, #0d140d 55%, #060806 100%);
+
+    display: flex;
+    align-items: center;
+}
+
+.duende-conteudo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.duende-texto {
+    max-width: 560px;
+}
+
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    color: #58d65c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.duende-texto h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(80px, 10vw, 145px);
+    line-height: 0.82;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #56dc5c;
+    text-shadow: 0 0 28px rgba(83, 214, 83, 0.18);
+
+    margin-bottom: 30px;
+}
+
+.duende-texto p {
+    max-width: 540px;
+    color: #d5d5d5;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.botao-conhecer {
+    display: inline-flex;
+    margin-top: 32px;
+    padding: 14px 22px;
+
+    background: #58d65c;
+    color: #071007;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    transition: 0.25s;
+}
+
+.botao-conhecer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(88, 214, 92, 0.25);
+}
+
+.duende-imagem {
+    position: relative;
+
+>>>>>>> 5a11a1a6203cee8602c5cf121ed9f68ebf4de5c6
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .duende-imagem img {
     width: 320px;
     max-width: 100%;
@@ -63,11 +214,290 @@ body {
 @media (max-width: 768px) {
     .duende-verde {
         padding: 30px 6%;
+=======
+.duende-imagem::before {
+    content: "";
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+
+    background: rgba(83, 214, 83, 0.10);
+    filter: blur(40px);
+}
+
+.duende-imagem img {
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+
+    border-radius: 28px;
+    border: 1px solid rgba(88, 214, 92, 0.25);
+
+    box-shadow:
+        0 0 50px rgba(69, 190, 69, 0.22),
+        0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.secao {
+    padding: 110px 8%;
+}
+
+.conteudo-secao,
+.conteudo-rivalidade {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.numero {
+    display: inline-block;
+    color: #58d65c;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.secao h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.secao p {
+    color: #cfcfcf;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.origem {
+    background: #111611;
+}
+
+.origem .conteudo-secao {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.icone-secao {
+    width: 150px;
+    height: 150px;
+
+    border: 1px solid rgba(88, 214, 92, 0.30);
+    border-radius: 28px;
+
+    background:
+        linear-gradient(145deg, rgba(88, 214, 92, 0.12), rgba(255,255,255,0.02));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+    color: #58d65c;
+
+    box-shadow: inset 0 0 30px rgba(88, 214, 92, 0.05);
+}
+
+.origem p + p {
+    margin-top: 18px;
+}
+
+.arsenal {
+    text-align: center;
+    background: #090c09;
+}
+
+.descricao-secao {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cards-arsenal {
+    max-width: 1150px;
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.card-arsenal {
+    padding: 35px 24px;
+    min-height: 250px;
+
+    background:
+        linear-gradient(160deg, #161c16, #0c0f0c);
+
+    border: 1px solid #263126;
+    border-radius: 20px;
+
+    transition: 0.25s;
+}
+
+.card-arsenal:hover {
+    transform: translateY(-8px);
+    border-color: #58d65c;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.card-arsenal i {
+    font-size: 40px;
+    color: #58d65c;
+    margin-bottom: 22px;
+}
+
+.card-arsenal h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.card-arsenal p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bcbcbc;
+}
+
+.rivalidade {
+    background:
+        linear-gradient(90deg, #111611 0%, #0b0e0b 100%);
+}
+
+.conteudo-rivalidade {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.texto-rivalidade p + p {
+    margin-top: 18px;
+}
+
+.versus {
+    min-height: 340px;
+    padding: 40px;
+
+    background:
+        radial-gradient(circle, rgba(88, 214, 92, 0.12), transparent 60%);
+
+    border: 1px solid rgba(88, 214, 92, 0.20);
+    border-radius: 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+.versus span {
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.versus strong {
+    color: #58d65c;
+    font-size: 82px;
+    line-height: 1;
+}
+
+.legado {
+    text-align: center;
+    background: #070907;
+}
+
+.legado > p {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+blockquote {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px 40px;
+
+    border-left: 4px solid #58d65c;
+
+    background: #111611;
+    color: #ffffff;
+
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.botao-topo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #58d65c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+footer {
+    min-height: 150px;
+    padding: 35px;
+
+    background: #040604;
+    border-top: 1px solid #1c251c;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #58d65c;
+}
+
+footer p {
+    margin-top: 7px;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+
+    .menu-duende {
+        gap: 18px;
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    .menu-duende a {
+        font-size: 11px;
+    }
+
+    .voltar {
+        top: 110px;
+    }
+
+    .hero-duende {
+        padding-top: 180px;
+>>>>>>> 5a11a1a6203cee8602c5cf121ed9f68ebf4de5c6
     }
 
     .duende-conteudo {
         flex-direction: column;
         text-align: center;
+<<<<<<< HEAD
         gap: 40px;
         padding: 60px 0;
     }
@@ -82,5 +512,78 @@ body {
 
     .duende-imagem img {
         width: 260px;
+=======
+        gap: 55px;
+    }
+
+    .duende-texto h1 {
+        font-size: 85px;
+    }
+
+    .duende-texto p {
+        margin: 0 auto;
+    }
+
+    .origem .conteudo-secao,
+    .conteudo-rivalidade {
+        grid-template-columns: 1fr;
+    }
+
+    .icone-secao {
+        margin: 0 auto;
+    }
+
+    .origem,
+    .rivalidade {
+        text-align: center;
+    }
+
+    .cards-arsenal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .versus {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .menu-duende {
+        position: absolute;
+    }
+
+    .voltar {
+        top: 135px;
+    }
+
+    .duende-texto h1 {
+        font-size: 68px;
+    }
+
+    .duende-imagem img {
+        width: 280px;
+    }
+
+    .secao {
+        padding: 80px 6%;
+    }
+
+    .cards-arsenal {
+        grid-template-columns: 1fr;
+    }
+
+    .versus span {
+        font-size: 40px;
+    }
+
+    .versus strong {
+        font-size: 65px;
+    }
+
+    blockquote {
+        padding: 25px;
+        font-size: 17px;
+>>>>>>> 5a11a1a6203cee8602c5cf121ed9f68ebf4de5c6
     }
 }
