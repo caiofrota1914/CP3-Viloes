@@ -1,86 +1,302 @@
-body {
+:root {
+    --bg-main: #0a0a0d;
+    --bg-card: #121218;
+    --bg-header: #0e0a10;
+    --text-primary: #e0e0e6;
+    --text-muted: #9a9ab0;
+    --wine-accent: #6b0d23;
+    --wine-hover: #800020;
+    
+    --hover-coringa: #00ff66;
+    --hover-thanos: #9d4edd;
+    --hover-madara: #ff0033;
+    --hover-skinner: #ffffff;
+    --hover-duende: #556b2f;
+}
+
+* {
     margin: 0;
-    background-color: #101510;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.duende-verde {
-    min-height: 100vh;
-    padding: 40px 8%;
-    background:
-        radial-gradient(circle at 80% 50%, #1d3b1d 0%, #101510 45%);
-    color: white;
-    font-family: "Montserrat", sans-serif;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
 }
 
-.duende-verde > a {
-    color: #58d65c;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background-color: var(--bg-header);
+    border-bottom: 2px solid var(--wine-accent);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.info-section {
+    background-color: var(--bg-card);
+    border-left: 4px solid var(--wine-accent);
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 4px;
+}
+
+.info-section h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.info-section p:last-child {
+    margin-bottom: 0;
+}
+
+.cards-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid #1a1a24;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--wine-accent);
+    z-index: 1;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: filter 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.card-body p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background-color: var(--wine-accent);
+    color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 4px;
     font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.duende-conteudo {
-    min-height: 80vh;
+.btn:hover {
+    background-color: var(--wine-hover);
+}
+
+.card-coringa:hover {
+    transform: translateY(-8px);
+    border-color: var(--hover-coringa);
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.3);
+}
+.card-coringa:hover h3 {
+    color: var(--hover-coringa);
+}
+.card-coringa:hover .card-img {
+    filter: brightness(1);
+}
+
+.card-thanos:hover {
+    transform: translateY(-8px);
+    border-color: var(--hover-thanos);
+    box-shadow: 0 0 20px rgba(157, 78, 221, 0.3);
+}
+.card-thanos:hover h3 {
+    color: var(--hover-thanos);
+}
+.card-thanos:hover .card-img {
+    filter: brightness(1);
+}
+
+.card-madara:hover {
+    transform: translateY(-8px);
+    border-color: var(--hover-madara);
+    box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
+}
+.card-madara:hover h3 {
+    color: var(--hover-madara);
+}
+.card-madara:hover .card-img {
+    filter: brightness(1);
+}
+
+.card-skinner:hover {
+    transform: translateY(-8px);
+    border-color: var(--hover-skinner);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.card-skinner:hover h3 {
+    color: var(--hover-skinner);
+}
+.card-skinner:hover .card-img {
+    filter: brightness(1);
+}
+
+.card-duende:hover {
+    transform: translateY(-8px);
+    border-color: var(--hover-duende);
+    box-shadow: 0 0 20px rgba(85, 107, 47, 0.4);
+}
+.card-duende:hover h3 {
+    color: var(--hover-duende);
+}
+.card-duende:hover .card-img {
+    filter: brightness(1);
+}
+
+footer {
+    background-color: var(--bg-header);
+    border-top: 1px solid #1a1a24;
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+header {
+    background-color: var(--bg-header);
+    border-bottom: 2px solid var(--wine-accent);
+}
+
+.navbar {
+    background-color: rgba(10, 10, 13, 0.95);
+    border-bottom: 1px solid #1a1a24;
+    padding: 15px 0;
+}
+
+.nav-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
 }
 
-.duende-conteudo > div:first-child {
-    max-width: 520px;
+.logo {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.duende-conteudo h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 85px;
-    line-height: 0.95;
-    letter-spacing: 3px;
-    color: #53d653;
-    margin: 0 0 25px;
-}
-
-.duende-conteudo p {
-    font-size: 17px;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #dedede;
-}
-
-.duende-imagem {
+.nav-links {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
+    gap: 20px;
 }
 
-.duende-imagem img {
-    width: 320px;
-    max-width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 0 40px rgba(69, 190, 69, 0.25);
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .duende-verde {
-        padding: 30px 6%;
-    }
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--wine-accent);
+    padding-bottom: 3px;
+}
 
-    .duende-conteudo {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding: 60px 0;
-    }
+.hero {
+    background-image: linear-gradient(rgba(14, 10, 16, 0.85), rgba(10, 10, 13, 0.95)), url('sua-imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    text-align: center;
+}
 
-    .duende-conteudo h1 {
-        font-size: 60px;
-    }
+.hero h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
-    .duende-conteudo p {
-        font-size: 15px;
-    }
-
-    .duende-imagem img {
-        width: 260px;
-    }
+.hero .subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
 }
