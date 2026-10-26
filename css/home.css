@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+}
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.cabecalho nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 5%;
+}
+
+.cabecalho a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.cabecalho a:hover {
+    color: #8dff62;
+}
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 8%;
+    background:
+        radial-gradient(circle at 50% 50%, #303030 0%, #111111 45%, #070707 100%);
+}
+
+.hero h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 140px;
+    letter-spacing: 12px;
+    line-height: 1;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #bdbdbd;
+    font-size: 18px;
+}
+
+.sobre,
+.galeria,
+.diferencas {
+    padding: 90px 8%;
+}
+
+.sobre {
+    background: #f1f1f1;
+    color: #111111;
+    text-align: center;
+}
+
+.sobre h2,
+.galeria h2,
+.diferencas h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.sobre p,
+.diferencas p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.galeria {
+    background: #101010;
+    text-align: center;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 200px;
+    min-height: 230px;
+    padding: 30px 20px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    border: 1px solid #303030;
+    color: #ffffff;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #8dff62;
+}
+
+.card i {
+    font-size: 45px;
+}
+
+.card h3 {
+    font-size: 17px;
+}
+
+.diferencas {
+    background: #181818;
+    text-align: center;
+}
+
+footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #070707;
+    border-top: 1px solid #252525;
+    color: #888888;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .cabecalho a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+        letter-spacing: 6px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .sobre,
+    .galeria,
+    .diferencas {
+        padding: 70px 6%;
+    }
+
+    .sobre h2,
+    .galeria h2,
+    .diferencas h2 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
