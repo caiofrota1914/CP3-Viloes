@@ -199,3 +199,4 @@ if (btnReviver) {
 }
 
 const ordem = ['.faixa-4', '.faixa-3', '.faixa-2', '.faixa-1', '.rodape', 'header', '.menu-fixo', '.voltar', '.botao-topo'];
+
