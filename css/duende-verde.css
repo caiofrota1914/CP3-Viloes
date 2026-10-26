@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: #101510;
+}
+
+.duende-verde {
+    min-height: 100vh;
+    padding: 40px 8%;
+    background:
+        radial-gradient(circle at 80% 50%, #1d3b1d 0%, #101510 45%);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.duende-verde > a {
+    color: #58d65c;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.duende-conteudo {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.duende-conteudo > div:first-child {
+    max-width: 520px;
+}
+
+.duende-conteudo h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 85px;
+    line-height: 0.95;
+    letter-spacing: 3px;
+    color: #53d653;
+    margin: 0 0 25px;
+}
+
+.duende-conteudo p {
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #dedede;
+}
+
+.duende-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duende-imagem img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(69, 190, 69, 0.25);
+}
+
+@media (max-width: 768px) {
+    .duende-verde {
+        padding: 30px 6%;
+    }
+
+    .duende-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 0;
+    }
+
+    .duende-conteudo h1 {
+        font-size: 60px;
+    }
+
+    .duende-conteudo p {
+        font-size: 15px;
+    }
+
+    .duende-imagem img {
+        width: 260px;
+    }
+}
