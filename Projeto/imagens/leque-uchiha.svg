@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-labelledby="t">
+  <title id="t">Brasão do clã Uchiha (uchiwa)</title>
+  <rect x="91" y="150" width="18" height="84" rx="6" fill="#e9e2d4"/>
+  <path d="M100 8 A82 82 0 0 1 182 90 H18 A82 82 0 0 1 100 8 Z" fill="#c3121c"/>
+  <path d="M18 90 H182 A82 82 0 0 1 100 172 A82 82 0 0 1 18 90 Z" fill="#f5f1e8"/>
+  <circle cx="100" cy="90" r="82" fill="none" stroke="#0d0b0e" stroke-width="4"/>
+</svg>

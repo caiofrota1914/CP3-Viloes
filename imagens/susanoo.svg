@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="t">
+  <title id="t">Chama azul do Susanoo</title>
+  <defs>
+    <linearGradient id="f" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#1b3f8f"/>
+      <stop offset=".6" stop-color="#3f7be0"/>
+      <stop offset="1" stop-color="#9fd0ff"/>
+    </linearGradient>
+  </defs>
+  <path d="M100 8 C 120 50 168 66 160 122 C 154 166 124 192 100 192 C 76 192 46 166 40 122 C 34 80 70 70 74 34 C 90 56 88 74 100 84 C 104 60 96 34 100 8 Z" fill="url(#f)"/>
+  <path d="M100 96 C 112 118 136 126 130 152 C 126 172 112 180 100 180 C 88 180 74 172 70 152 C 66 130 88 124 100 96 Z" fill="#d6ecff" fill-opacity=".8"/>
+</svg>

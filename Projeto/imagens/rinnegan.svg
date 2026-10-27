@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="t">
+  <title id="t">Rinnegan</title>
+  <defs>
+    <radialGradient id="r" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#d9cff7"/>
+      <stop offset=".6" stop-color="#9b86d6"/>
+      <stop offset="1" stop-color="#5a4596"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#r)" stroke="#1d1530" stroke-width="5"/>
+  <g fill="none" stroke="#1d1530" stroke-width="4">
+    <circle cx="100" cy="100" r="78"/>
+    <circle cx="100" cy="100" r="60"/>
+    <circle cx="100" cy="100" r="42"/>
+    <circle cx="100" cy="100" r="25"/>
+  </g>
+  <circle cx="100" cy="100" r="9" fill="#1d1530"/>
+  <ellipse cx="76" cy="62" rx="14" ry="7" fill="#fff" fill-opacity=".3" transform="rotate(-30 76 62)"/>
+</svg>
