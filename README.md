@@ -1,9 +1,20 @@
-# CP3 - Vilões
+# 🧠 A Mente dos Vilões
 
-Projeto desenvolvido para o CP3 de Front-End da FIAP.
+Projeto web que explora a história, motivações e psicologia de grandes vilões da cultura pop.
 
-## Tema
-Vilões
+## 🎭 Vilões Destacados
+
+* Coringa
+* Thanos
+* Madara Uchiha
+* Chef Skinner
+* Duende Verde
+
+## 🛠️ Tecnologias
+
+* HTML5
+* CSS3
+* JavaScript
 
 ## Turma
 1ESPS
@@ -14,10 +25,3 @@ Vilões
 - Mahdi Moujahed Yassine Monges - RM 575595
 - Caio Alves Batista Frota - RM 574487
 - Lucas Almeida Massaro Vicente - RM 575963
-
-## Tecnologias
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
